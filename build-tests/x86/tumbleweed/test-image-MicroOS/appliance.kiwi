@@ -25,7 +25,6 @@
         <locale>en_EN</locale>
         <keytable>cm-french.map.gz</keytable>
         <timezone>Europe/Berlin</timezone>
-        <hwclock>utc</hwclock>
         <rpm-excludedocs>true</rpm-excludedocs>
         <type
             image="oem"
