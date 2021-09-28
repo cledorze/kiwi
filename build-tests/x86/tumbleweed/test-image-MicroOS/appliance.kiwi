@@ -4,7 +4,7 @@
     <description type="system">
         <author>cledorze base image</author>
         <contact>cledorze@suse.com</contact>
-        <specification>OnIT MicroOS Tumbleweed 15.3 </specification>
+        <specification>test MicroOS Tumbleweed 15.3 </specification>
     </description>
     <preferences>
         <version>16.0.0</version>
