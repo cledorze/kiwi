@@ -30,7 +30,7 @@
             image="oem"
             filesystem="btrfs"
             firmware="uefi"
-            installiso="false"
+            installiso="true"
             installboot="install"
             kernelcmdline="quiet systemd.show_status=yes console=ttyS0,115200 console=tty0 net.ifnames=0 \$ignition_firstboot ignition.platform.id=qemu"
             bootpartition="false"
