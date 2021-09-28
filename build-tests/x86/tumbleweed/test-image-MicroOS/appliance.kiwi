@@ -1,26 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- # ********************************************************************************************* -->
+<!-- # OnIT OS generation -->
+<!-- # -->
+<!-- # -->
+<!-- # COPYRIGHT -->
+<!-- # | All rights reserved (c) 2021 ALSTOM, France -->
+<!-- # | -->
+<!-- # | This computer program may not be used, copied, distributed, -->
+<!-- # | corrected, modified, translated, transmitted or assigned -->
+<!-- # | without ALSTOM's prior written authorization. -->
+<!-- # ********************************************************************************************* -->
 
 <image schemaversion="7.4" name="kiwi-test-image-MicroOS">
     <description type="system">
-        <author>Marcus Schäfer</author>
-        <contact>ms@suse.com</contact>
-        <specification>MicroOS disk test build</specification>
+        <author>OnIT base image</author>
+        <contact>crc@salstomgroup.com</contact>
+        <specification>OnIT MicroOS Tumbleweed 15.3 </specification>
     </description>
     <preferences>
         <version>16.0.0</version>
         <packagemanager>zypper</packagemanager>
+        <bootsplash-theme>openSUSE</bootsplash-theme>
         <bootloader-theme>openSUSE</bootloader-theme>
+        <locale>en_EN</locale>
+        <keytable>cm-french.map.gz</keytable>
+        <timezone>Europe/Berlin</timezone>
+        <hwclock>utc</hwclock>
         <rpm-excludedocs>true</rpm-excludedocs>
-        <locale>en_US</locale>
         <type
             image="oem"
             filesystem="btrfs"
             firmware="uefi"
-            installiso="true"
+            installiso="false"
+            bootloader="grub2"
             installboot="install"
             kernelcmdline="quiet systemd.show_status=yes console=ttyS0,115200 console=tty0 net.ifnames=0 \$ignition_firstboot ignition.platform.id=qemu"
             bootpartition="false"
-            devicepersistency="by-uuid"
+            devicepersistency="by-label"
+            rootfs_label="ROOT"
             btrfs_root_is_snapshot="true"
             btrfs_root_is_readonly_snapshot="true"
             btrfs_quota_groups="true"
