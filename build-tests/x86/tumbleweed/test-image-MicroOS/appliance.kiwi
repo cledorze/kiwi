@@ -22,7 +22,7 @@
         <packagemanager>zypper</packagemanager>
         <bootsplash-theme>openSUSE</bootsplash-theme>
         <bootloader-theme>openSUSE</bootloader-theme>
-        <locale>en_EN</locale>
+        <locale>en_US</locale>
         <keytable>cm-french.map.gz</keytable>
         <timezone>Europe/Berlin</timezone>
         <rpm-excludedocs>true</rpm-excludedocs>
